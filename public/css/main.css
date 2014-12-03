@@ -1,2 +1,99 @@
+.helveticaNormal {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-stretch: normal; }
+
+.helveticaLight {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
+
+.helveticaRoman {
+  font-family: "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-stretch: normal; }
+
+.helveticaBold, .home .title h1 {
+  font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 600; }
+
 * {
   box-sizing: border-box; }
+
+html {
+  font-size: 1em; }
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  background: yellow; }
+  header .logo-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: black;
+    margin: 0.5rem 0 0.5rem 5%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%; }
+    header .logo-container .logo {
+      width: 1.75rem;
+      height: 1.75rem;
+      position: relative;
+      right: 0.15rem; }
+
+.home {
+  width: 100%;
+  background: red; }
+  .home .title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin-left: 5%; }
+    .home .title h1 {
+      background: pink;
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 0px;
+      color: #fff; }
+    .home .title p {
+      background: yellow;
+      font-size: 1.5rem;
+      line-height: 1;
+      text-align: center; }
+    .home .title a {
+      background: teal;
+      margin-left: 5%; }
