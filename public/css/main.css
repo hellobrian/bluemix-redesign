@@ -1,20 +1,24 @@
 .helveticaNormal {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
-  font-stretch: normal; }
+  font-stretch: normal;
+  line-height: 1; }
 
-.helveticaLight {
+.helveticaLight, .home .title a {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1; }
 
 .helveticaRoman {
   font-family: "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
-  font-stretch: normal; }
+  font-stretch: normal;
+  line-height: 1; }
 
 .helveticaBold, .home .title h1 {
   font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 1; }
 
 * {
   box-sizing: border-box; }
@@ -67,7 +71,7 @@ header {
 
 .home {
   width: 100%;
-  background: red; }
+  background: black; }
   .home .title {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -85,15 +89,21 @@ header {
     margin-left: 5%; }
     .home .title h1 {
       background: pink;
-      font-size: 3rem;
-      line-height: 1;
-      margin-bottom: 0px;
+      font-size: 4rem;
+      margin-bottom: 1rem;
       color: #fff; }
     .home .title p {
+      border: 3px solid orange;
+      padding: 0.75rem;
       background: yellow;
       font-size: 1.5rem;
-      line-height: 1;
-      text-align: center; }
+      text-align: center;
+      margin: 0; }
     .home .title a {
-      background: teal;
-      margin-left: 5%; }
+      background: red;
+      color: #fff;
+      margin: 1rem 5% 2rem 5%;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      text-decoration: none; }
