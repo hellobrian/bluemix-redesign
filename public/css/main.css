@@ -1,10 +1,9 @@
 .helveticaNormal {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
-  font-stretch: normal;
-  line-height: 1; }
+  font-stretch: normal; }
 
-.helveticaLight, .home .title a {
+.helveticaLight, .home .title p, .home .title a {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   line-height: 1; }
@@ -23,8 +22,13 @@
 * {
   box-sizing: border-box; }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
 html {
-  font-size: 1em; }
+  font-size: 16px; }
 
 body {
   display: -webkit-flex;
@@ -33,18 +37,17 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
-  padding: 0; }
+  background: linear-gradient(#2980b9, transparent), linear-gradient(90deg, #1abc9c, transparent), linear-gradient(120deg, #45545D, transparent);
+  z-index: 9999; }
 
 header {
-  width: 100%;
-  background: yellow; }
+  width: 100%; }
   header .logo-container {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -58,20 +61,45 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: black;
-    margin: 0.5rem 0 0.5rem 5%;
+    margin: 5%;
     width: 3rem;
-    height: 3rem;
-    border-radius: 100%; }
+    height: 3rem; }
     header .logo-container .logo {
-      width: 1.75rem;
-      height: 1.75rem;
+      width: 2.75rem;
+      height: 2.75rem;
       position: relative;
       right: 0.15rem; }
 
+.home:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(../images/dashboard-apptile.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 100% 49%;
+  height: 100vh;
+  -webkit-filter: blur(1px);
+          filter: blur(1px); }
+
 .home {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
   width: 100%;
-  background: black; }
+  height: 100vh; }
   .home .title {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -85,23 +113,22 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 90%;
-    margin-left: 5%; }
+    width: 100%; }
     .home .title h1 {
-      background: pink;
       font-size: 4rem;
       margin-bottom: 1rem;
-      color: #fff; }
+      color: white; }
     .home .title p {
-      border: 3px solid orange;
       padding: 0.75rem;
-      background: yellow;
-      font-size: 1.5rem;
+      color: white;
+      font-size: 1.25rem;
       text-align: center;
-      margin: 0; }
+      margin: 0;
+      line-height: 1.25;
+      letter-spacing: 1.25px; }
     .home .title a {
-      background: red;
-      color: #fff;
+      background: #e74c3c;
+      color: white;
       margin: 1rem 5% 2rem 5%;
       padding: 0.75rem 1.25rem;
       font-size: 1rem;
