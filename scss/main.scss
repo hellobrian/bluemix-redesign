@@ -1,11 +1,24 @@
 @import 'theme/colors';
 @import 'theme/fonts';
+@import 'animate';
 
 @mixin flex($direction, $justify, $align-items) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align-items;
+}
+
+@keyframes slideUpBlur {
+  0% {
+    transform: translateY(100%);
+    filter: blur(90px);
+  }
+
+  100% {
+    transform: translateY(0%);
+    filter: blur(0px);
+  } 
 }
 
 * {
@@ -27,7 +40,7 @@ body {
   background:
     linear-gradient($dark-blue, transparent), 
     linear-gradient(90deg, $turquoise, transparent), 
-    linear-gradient(120deg, $dark-grey, transparent);
+    linear-gradient(120deg, $dark-blue, transparent);
   z-index: 9999;
 } 
 
@@ -58,16 +71,20 @@ header {
   background-image: url(../images/dashboard-apptile.png);
   background-repeat: no-repeat;
   background-size: 90%;
-  background-position: 100% 49%;
+  background-position: 100% 75%;
   height: 100vh;
-  filter: blur(1px);
+  animation-name: slideUpBlur;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  visibility: none;
 }
 
 .home {
   @include flex(column, center, center);
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 
   .title {
     @include flex(column, center, center);
