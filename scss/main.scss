@@ -1,6 +1,5 @@
 @import 'theme/colors';
 @import 'theme/fonts';
-@import 'animate';
 @import 'customAnimate';
 
 @mixin flex($direction, $justify, $align-items) {
@@ -65,8 +64,7 @@ header {
   background-size: 90%;
   background-position: 100% 75%;
   height: 100vh;
-  visibility: none;
-  @extend .slideUpBlur;
+  visibility: none; @extend .slideUpBlur;
 }
 
 .home {
@@ -89,12 +87,15 @@ header {
     p {
       padding: 0.75rem;
       color: $white;
-      font-size: 1.25rem;
+      font-size: 1rem;
       text-align: center;
       margin: 0;
       line-height: 1.25;
       letter-spacing: 1.25px;
-      @extend .helveticaLight;
+      // @extend .helveticaLight;
+      // @extend .openSansLight;
+      @extend .lato;
+      text-transform: uppercase;
     }
 
     a {

@@ -1,3 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300); // Open Sans
+@import url(http://fonts.googleapis.com/css?family=Lato:100); // Lato
+
+.lato {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.openSansLight {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 .helveticaNormal {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight:400;
