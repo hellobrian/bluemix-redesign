@@ -253,9 +253,10 @@ header {
       letter-spacing: 1.5px;
       text-decoration: none;
       text-transform: uppercase;
+      border-top: 0px solid transparent;
       border-bottom: 5px solid #c0392b;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
       .home .title a:active {
-        border-bottom: 5px solid #e74c3c;
-        opacity: 0.8;
-        transition: 0.2s; }
+        border-top: 5px solid #e74c3c;
+        border-bottom: 0px solid #c0392b;
+        transition: 0.25s; }
