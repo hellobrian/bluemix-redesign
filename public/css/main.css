@@ -1,10 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-@import url(http://fonts.googleapis.com/css?family=Lato:100);
-.lato, .home .title p {
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(http://fonts.googleapis.com/css?family=Karla);
+.karla, .home .title a {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  line-height: 1; }
+
+.latoThin, .home .title p {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  line-height: 1;
-  font-weight: normal; }
+  line-height: 1; }
+
+.latoLight {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1; }
+
+.latoNormal {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1; }
 
 .openSansLight {
   font-family: 'Open Sans', sans-serif;
@@ -18,7 +33,7 @@
   font-weight: 400;
   font-stretch: normal; }
 
-.helveticaLight, .home .title a {
+.helveticaLight {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   line-height: 1; }
@@ -234,6 +249,13 @@ header {
       color: white;
       margin: 1rem 5% 2rem 5%;
       padding: 0.75rem 1.25rem;
-      font-size: 1rem;
+      font-size: 1.25rem;
       letter-spacing: 1.5px;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 5px solid #c0392b;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+      .home .title a:active {
+        border-bottom: 5px solid #e74c3c;
+        opacity: 0.8;
+        transition: 0.2s; }

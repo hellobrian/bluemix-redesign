@@ -94,7 +94,7 @@ header {
       letter-spacing: 1.25px;
       // @extend .helveticaLight;
       // @extend .openSansLight;
-      @extend .lato;
+      @extend .latoThin;
       text-transform: uppercase;
     }
 
@@ -103,10 +103,20 @@ header {
       color: $white;
       margin: 1rem 5% 2rem 5%;
       padding: 0.75rem 1.25rem;
-      font-size: 1rem;
+      font-size: 1.25rem;
       letter-spacing: 1.5px;
       text-decoration: none;
-      @extend .helveticaLight;
+      // @extend .helveticaLight;
+      // @extend .latoNormal;
+      @extend .karla;
+      text-transform: uppercase;
+      border-bottom: 5px solid $pom;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+      &:active {
+        border-bottom: 5px solid $red;
+        opacity: 0.8; 
+        transition: 0.2s;
+      }
     }
   }
 }
