@@ -1,6 +1,7 @@
 @import 'theme/colors';
 @import 'theme/fonts';
 @import 'animate';
+@import 'customAnimate';
 
 @mixin flex($direction, $justify, $align-items) {
   display: flex;
@@ -9,17 +10,6 @@
   align-items: $align-items;
 }
 
-@keyframes slideUpBlur {
-  0% {
-    transform: translateY(100%);
-    filter: blur(90px);
-  }
-
-  100% {
-    transform: translateY(0%);
-    filter: blur(0px);
-  } 
-}
 
 * {
   box-sizing: border-box;
@@ -51,15 +41,17 @@ header {
     margin: 5%;
     width: 3rem;
     height: 3rem;
-    
-    .logo {
-      width: 2.75rem;
-      height: 2.75rem;
-      position: relative;
-      right: 0.15rem;
+    a {
+      .logo {
+        width: 2.75rem;
+        height: 2.75rem;
+        position: relative;
+        right: 0.15rem;
+        @extend .bounce;
+        // @extend .pulse;
+      }
     }
   }
-
 }
 
 .home:before {
@@ -73,11 +65,8 @@ header {
   background-size: 90%;
   background-position: 100% 75%;
   height: 100vh;
-  animation-name: slideUpBlur;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  animation-delay: 1s;
   visibility: none;
+  @extend .slideUpBlur;
 }
 
 .home {
